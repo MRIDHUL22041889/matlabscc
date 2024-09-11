@@ -21,10 +21,3 @@ colormap(cmap);
 colorbar;
 xlabel('Column Index');
 ylabel('Row Index');
-
-textStrings = num2str(matrix(:));
-textStrings = strtrim(cellstr(textStrings));
-[xPos, yPos] = meshgrid(1:10, 1:10);
-xPos = xPos(:);
-yPos = yPos(:);
-text(xPos, yPos, textStrings, 'HorizontalAlignment', 'Center', 'Color', 'k');
